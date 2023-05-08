@@ -34,13 +34,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_25_005548) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "wallet_users", force: :cascade do |t|
-    t.integer "walletId"
-    t.integer "userId"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "wallets", force: :cascade do |t|
     t.text "name"
     t.datetime "created_at", null: false
